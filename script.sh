@@ -1,4 +1,4 @@
-curl -N https://httpstatuses.com/$1 > tmp_file
+curl -N -s https://httpstatuses.com/$1 > tmp_file
 grep '<h>' tmp_file > tmp.txt
 # cat tmp.txt
 
